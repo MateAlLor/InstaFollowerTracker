@@ -123,16 +123,13 @@ class Interfaz {
 
         // LI DE BOTONES
         const aux0_li = document.createElement('li');
-        const aux1_li = document.createElement('li');
-        // const aux2_li = document.createElement('li');
+        // const aux1_li = document.createElement('li');
 
         aux0_li.appendChild(button_download_all_followers)
-        aux1_li.appendChild(button_unfollow_selected)
-        // aux2_li.appendChild(button_unfollow_selected)
+        // aux1_li.appendChild(button_unfollow_selected)
 
         button_list.appendChild(aux0_li)
-        button_list.appendChild(aux1_li)
-        // button_list.appendChild(aux2_li)
+        // button_list.appendChild(aux1_li)
     }
 
     render_uploaded_list(usersList){

@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+}
+
+h2 {
+    color: #d4d4d4;
+}
+
+header {
+    background-color: #3b3b3b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.checkbox-list {
+    flex: 2;
+    margin-right: 1rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+    padding: 1rem;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox-list li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem;
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-list li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.checkbox-list li label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.checkbox-list li label .username {
+    font-weight: bold;
+    color: #d4d4d4;
+}
+
+.checkbox-list li label .fullname {
+    font-size: 0.9rem;
+    color: #d4d4d4;
+}
+
+.menu {
+    flex: 1;
+    background-color: rgb(49, 49, 49);
+    padding: 1rem;
+    border: 1px solid rgb(44, 44, 44);
+    height: calc(100vh - 80px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 80px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0.5rem 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #cf3ca3;
+}
+
+.elemento-usuario {
+    flex-direction: row;
+
+}
+
+p {
+    color: #d4d4d4;
+}
+
+.div-li-names {
+    align-items: center;
+    align-content: center;
+}
+
+.username-text {
+    font-size: 25px;
+}
+
+.fullname-text {
+    font-size: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-button {
+    width: 100%;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(255, 117, 140, 0.4);
+}
+
+.custom-button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(255, 117, 140, 0.6);
+    transform: translateY(-2px);
+}
+
+.custom-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(255, 117, 140, 0.4);
+}
+
+/* 
+.unfollow-button{
+    background: linear-gradient(135deg, #eb4f69, #ff3636);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(255, 117, 117, 0.4);
+}
+
+.unfollow-button:hover{
+    background: linear-gradient(135deg, #ec657b, #ff6363);
+}
+
+.unfollow-button:active{
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(255, 117, 117, 0.4);
+} */
+
+.menu-index {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 12px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+}
+
+
+.menu-index ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+
+.menu-index li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
